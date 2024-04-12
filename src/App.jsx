@@ -6,7 +6,7 @@ export default function App() {
   const [List, SetList] = useState([]);
 
   return (
-    <div>
+    <div className="container">
       <h2>TO Do List</h2>
       <input
         type="text"
@@ -23,9 +23,11 @@ export default function App() {
       >
         Add TO List
       </button>
-      {List.map((item, index) => {
-        return <li key={index}>{item}</li>;
-      })}
+      <div className="items">
+        {List.map((item, index) => {
+          return <li key={index}>{item}</li>;
+        })}
+      </div>
     </div>
   );
 }

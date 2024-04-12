@@ -7,14 +7,14 @@ body {
   height: 100vh;
   margin: 0;
 }
-div {
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: lightblue;
-  width: 300px;
-  height: 300px;
   border-radius: 15px;
+  width: 300px;
+  padding: 24px;
 }
 input:focus,
 button:focus {
@@ -36,7 +36,15 @@ li {
   background-color: white;
   margin-top: 9px;
   padding: 6px 18px;
-  width: 50%;
+  width: 30%;
   text-align: center;
   text-transform: capitalize;
+}
+.items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  width: 300px;
+  flex-wrap: wrap;
 }
